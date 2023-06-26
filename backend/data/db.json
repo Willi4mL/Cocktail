@@ -1,0 +1,12 @@
+{
+	"drink": [
+		{
+			"id": 1,
+			"name" : "Cuba libre",
+			"ingredient" : [
+				"Coca cola",
+				"Rom"
+			]
+		}
+	]
+}
