@@ -1,11 +1,11 @@
 {
-  "drink": [
+  "drinks": [
     {
       "id": 20335,
-      "name": "Pink Panter",
+      "name": "Rosa Pantern",
       "image": "https://drinkoteket.com/wp-content/uploads/rosa-pantern.jpg",
       "ingredient": [
-        "Milk",
+        "Mjölk",
         "Rom"
       ],
       "rating": 2,

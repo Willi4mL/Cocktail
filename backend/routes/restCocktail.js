@@ -7,13 +7,13 @@ const db = getDb()
 // GET
 router.get('/', async (req, res) => {
     await db.read()
-    res.send(db.data.drink)
+    res.send(db.data.drknks)
 })
 
 // POST
 router.post('/', async (req, res) => {
     await db.read()
-    const cocktail = db.data.drink
+    const cocktail = db.data.drknks
     const generateId = Math.round(Math.random() * 100000)
   
     const addCocktail = {
@@ -39,13 +39,13 @@ router.delete('/:id', async (req, res) => {
         return
     }
     await db.read()
-    const index = db.data.drink.findIndex(cocktail => cocktail.id === id)
+    const index = db.data.drknks.findIndex(cocktail => cocktail.id === id)
     if (index === -1) {
         res.sendStatus(404)
         return
     }
 
-    db.data.drink.splice(index, 1)
+    db.data.drknks.splice(index, 1)
     await db.write()
 
     res.sendStatus(200)
@@ -56,7 +56,7 @@ router.put('/:id', async (req, res) => {
     const id = Number(req.params.id)
   
     await db.read()
-    const cocktails = db.data.drink
+    const cocktails = db.data.drknks
   
     for (let i = 0; i < cocktails.length; i++) {
       const cocktail = cocktails[i]

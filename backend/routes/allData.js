@@ -6,7 +6,7 @@ const db = getDb()
 
 router.get('/', async (req, res) => {
     await db.read()
-    res.send(db.data.drink)
+    res.send(db.data.drinks)
 })
 
 export default router
