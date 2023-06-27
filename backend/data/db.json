@@ -1,12 +1,26 @@
 {
-	"drink": [
-		{
-			"id": 1,
-			"name" : "Cuba libre",
-			"ingredient" : [
-				"Coca cola",
-				"Rom"
-			]
-		}
-	]
+  "drink": [
+    {
+      "id": 20335,
+      "name": "Pink Panter",
+      "image": "https://drinkoteket.com/wp-content/uploads/rosa-pantern.jpg",
+      "ingredient": [
+        "Milk",
+        "Rom"
+      ],
+      "rating": 2,
+      "amount": 4
+    },
+    {
+      "name": "Cuba libre",
+      "image": "https://drinkoteket.se/wp-content/uploads/cuba-libre-1.jpg",
+      "ingredient": [
+        "16cl-Coca cola",
+        "24cl-Rom"
+      ],
+      "rating": 4,
+      "amount": 4,
+      "id": 24085
+    }
+  ]
 }
