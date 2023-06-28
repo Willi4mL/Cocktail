@@ -12,8 +12,6 @@ const CocktailContent = () => {
 
 	return (
 		<>
-			<h1>Cocktail</h1>
-			<button onClick={() => setIsCocktail(!isCocktail)}>Visa alla drinkar</button>
 			{isCocktail && (
 				drinkData.map((drink) => (
 					<div className='cocktail-card' key={drink.id}>

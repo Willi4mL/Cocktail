@@ -9,3 +9,8 @@ export const visibleAllCocktails = atom ({
 	key: 'VisibleAllCocktails',
 	default: false
 })
+
+export const clickedMenu = atom ({
+	key: 'clickedMenu',
+	default: false
+})

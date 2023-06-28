@@ -1,0 +1,19 @@
+  .header-menu {
+	width: 100%;
+	position: fixed;
+	background-color: #000000;
+	display: flex;
+	justify-content: space-between;
+	padding: 1em 1em 0 1em;
+	z-index: 3;
+  }
+
+  .heading {
+	color: #ffffff;
+  }
+
+  .burger-menu {
+	font-size: 1.35em;
+	cursor: pointer;
+	color: #ffffff;
+  }
