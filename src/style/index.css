@@ -3,3 +3,8 @@
   margin: 0;
   overflow-x: hidden;
 }
+
+.content-container {
+  background-image:linear-gradient(0.70turn, #5cf5c2, #8cdce2, #98f5e1);
+  width: 100%;
+}

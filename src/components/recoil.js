@@ -7,10 +7,15 @@ export const fetchState = atom({
 
 export const visibleAllCocktails = atom ({
 	key: 'VisibleAllCocktails',
-	default: false
+	default: true
 })
 
 export const clickedMenu = atom ({
 	key: 'clickedMenu',
+	default: false
+})
+
+export const clickedAbout = atom ({
+	key: 'clickedAbout',
 	default: false
 })

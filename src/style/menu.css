@@ -2,7 +2,7 @@
 	position: fixed;
 	z-index: 2;
 	background-color: #000000;
-	color: white;
+	color: #ffffff;
 	width: 100%;
 	top: 43px;
 	padding: 1em 0;
@@ -19,7 +19,7 @@
 }
 
 .menu-container > ul > li:hover {
-	background-color: #dca3ee;
+	background-color: #616e56;
 	cursor: pointer;
 	padding-left: 1em;
 }

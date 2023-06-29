@@ -1,13 +1,9 @@
-.hero-page {
-	width: 100%;
-	background-image:linear-gradient(0.70turn, #5cf5c2, #8cdce2, #98f5e1);
-  }
-
   .main-content-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height:100%;
   }
 
   .hero-picture {
@@ -38,7 +34,9 @@
 	.main-content-container {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr 1fr;
 		margin: 5em 1em;
+		overflow-y: hidden;
 	}
 	.main-content-container > p  {
 		grid-column: 1 / span 2;
