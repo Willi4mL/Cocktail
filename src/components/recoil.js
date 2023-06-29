@@ -19,3 +19,8 @@ export const clickedAbout = atom ({
 	key: 'clickedAbout',
 	default: false
 })
+
+export const screenSizeState = atom ({
+	key: 'screenSizeState',
+	default: null
+})

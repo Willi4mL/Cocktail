@@ -1,4 +1,4 @@
-.menu-container {
+.mobile-screen {
 	position: fixed;
 	z-index: 2;
 	background-color: #000000;
@@ -10,15 +10,32 @@
 	border-top: 2px solid #9e9e9e;
 }
 
-.menu-container > ul {
+.desktop-screen {
+	position: fixed;
+	z-index: 2;
+	background-color: #000000;
+	color: #ffffff;
+	width: 180px;
+	height: 100%;
+	top: 43px;
+	left: 45px;
+	padding: 1em 0;
+	line-height: 2em;
+	border-radius: 0 0 3px 0;
+}
+
+.mobile-screen > ul,
+.desktop-screen > ul {
 	padding: 0;
 } 
 
-.menu-container > ul > li {
+.mobile-screen > ul > li,
+.desktop-screen > ul > li {
 	padding-left: 0.5em;
 }
 
-.menu-container > ul > li:hover {
+.mobile-screen > ul > li:hover,
+.desktop-screen > ul > li:hover {
 	background-color: #616e56;
 	cursor: pointer;
 	padding-left: 1em;

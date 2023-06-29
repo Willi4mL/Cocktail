@@ -1,11 +1,12 @@
 import React from 'react'
 import { useRecoilState } from 'recoil'
-import { visibleAllCocktails, clickedAbout, clickedMenu } from './recoil'
+import { visibleAllCocktails, clickedAbout, clickedMenu, screenSizeState } from './recoil'
 
 function Menu() {
 	const [isCocktail, setIsCocktail] = useRecoilState(visibleAllCocktails)
 	const [isAboutClicked, setIsAboutClicked] = useRecoilState(clickedAbout)
 	const [isMenuClicked, setIsMenuClicked] = useRecoilState(clickedMenu)
+	const [isResize, setIsResize] = useRecoilState(screenSizeState)
 
 	const handleCocktail = () => {
 		setIsCocktail(true)
@@ -19,8 +20,10 @@ function Menu() {
 		setIsMenuClicked(false)
 	}
 
+	const menuClassName = isResize ? 'desktop-screen' : 'mobile-screen'
+
 	return (
-		<div className='menu-container'>
+		<div className={menuClassName}>
 			<ul>
 				<li onClick={handleCocktail}>Visa alla drinkar</li>
 				<li onClick={handleAbout}>Om oss</li>

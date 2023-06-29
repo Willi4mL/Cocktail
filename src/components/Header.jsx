@@ -1,16 +1,17 @@
 import React from "react"
-import { clickedMenu } from "./recoil"
+import { clickedMenu, screenSizeState } from "./recoil"
 import { useRecoilState } from "recoil"
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 
 const Header = () => {
 	const [isMenuClicked, setIsMenuClicked] = useRecoilState(clickedMenu)
+	const [isResize, setIsResize] = useRecoilState(screenSizeState)
 
 	return (
 		<>
-		<nav className='header-menu'>
+			<nav className='header-menu'>
 				<h1 className="heading">Dryckes listan</h1>
-				<p className='burger-menu' onClick={() => setIsMenuClicked(!isMenuClicked)}> <HiOutlineMenuAlt3 /> </p>
+				{!isResize && <p className='burger-menu' onClick={() => setIsMenuClicked(!isMenuClicked)}> <HiOutlineMenuAlt3 /> </p>}
 			</nav>
 		</>
 	)
