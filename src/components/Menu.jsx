@@ -24,6 +24,7 @@ function Menu() {
 
 	return (
 		<div className={menuClassName}>
+			<h3 className='menu-heading'>Meny</h3>
 			<ul>
 				<li onClick={handleCocktail}>Visa alla drinkar</li>
 				<li onClick={handleAbout}>Om oss</li>

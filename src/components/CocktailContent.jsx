@@ -12,6 +12,7 @@ const CocktailContent = () => {
 
 	return (
 		<>
+		<hr/>
 			{isCocktail && (
 				drinkData.map((drink) => (
 					<div className='cocktail-card' key={drink.id}>
