@@ -22,6 +22,7 @@
 	padding: 1em 0;
 	line-height: 2em;
 	border-radius: 0 0 3px 0;
+	
 }
 
 .menu-heading {
@@ -38,11 +39,12 @@
 .mobile-screen > ul > li,
 .desktop-screen > ul > li {
 	padding-left: 0.5em;
+	transition: all 0.2s;
 }
 
 .mobile-screen > ul > li:hover,
 .desktop-screen > ul > li:hover {
-	background-color: #616e56;
+	background-color: #97458c;
 	cursor: pointer;
 	padding-left: 1em;
 }

@@ -7,6 +7,7 @@ import './style/cocktailCard.css'
 import './style/hero.css'
 import './style/header.css'
 import './style/menu.css'
+import './style/about.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

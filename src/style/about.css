@@ -1,0 +1,108 @@
+.about-container {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.paragraph-container {
+	margin: 3em 1em 0 1em;
+}
+
+.about-heading {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.about-paragraph {
+	margin-bottom: 1em;
+	line-height: 1.3em;
+}
+
+.about-subheading {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 2em;
+	height: 1.5em;
+	margin-top: 1.5em;
+	display: flex;
+	align-self: center;
+	align-items: center;
+}
+
+.bartender {
+	width: 100%;
+	margin: 2em 0 2em 0;
+	border-radius: 5px;
+}
+
+.champagne-bottle {
+	width: 10em;
+	bottom: 0;
+	transform: rotate(-90deg);
+	align-self: end;
+	margin-right: 1em;
+}
+
+@media (min-width: 769px) {
+	.about-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin-left: 45px;
+	}
+	.paragraph-container {
+		grid-column: 1 / span 2;
+	}
+	.about-heading {
+		font-size: 3em;
+		grid-column: 1 / span 3;
+		grid-row: 1;
+	}
+	.bartender {
+		grid-column: 3;
+		grid-row: 2;
+	}
+	.champagne-bottle {
+		grid-column: 3;
+		display: flex;
+		justify-self: end;
+	}
+}
+
+@media (min-width: 1040px) {
+	.about-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.about-heading {
+		grid-column: 2 / span 2;
+		display: flex;
+		justify-self: center;
+	}
+	.bartender {
+		grid-column: 2 / span 2;
+		width: 500px;
+		display: flex;
+		justify-self: center;
+	}
+	.paragraph-container {
+		grid-row: 3;
+		grid-column: 1 / span 4;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 4em;
+	}
+	.about-paragraph:nth-child(1) {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	.about-paragraph:nth-child(2) {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	.champagne-bottle {
+		grid-column: 4;
+		grid-row: 4;
+		display: flex;
+		justify-self: end;
+	}
+}
