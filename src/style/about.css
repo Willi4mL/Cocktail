@@ -6,7 +6,7 @@
 }
 
 .paragraph-container {
-	margin: 3em 1em 0 1em;
+	margin: 1em 1em 0 1em;
 }
 
 .about-heading {
@@ -90,6 +90,7 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 4em;
+		margin: 1em 3em 0 3em;
 	}
 	.about-paragraph:nth-child(1) {
 		grid-column: 1;

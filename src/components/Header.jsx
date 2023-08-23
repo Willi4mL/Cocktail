@@ -7,11 +7,17 @@ const Header = () => {
 	const [isMenuClicked, setIsMenuClicked] = useRecoilState(clickedMenu)
 	const [isResize, setIsResize] = useRecoilState(screenSizeState)
 
+	const handleMenuClick = () => {
+		setIsAboutClicked(false);
+		setIsCocktail(false);
+		setIsMenuClicked(!isMenuClicked);
+	  };
+
 	return (
 		<>
 			<nav className='header-menu'>
 				<h1 className="heading">Dryckes listan</h1>
-				{!isResize && <p className='burger-menu' onClick={() => setIsMenuClicked(!isMenuClicked)}> <HiOutlineMenuAlt3 /> </p>}
+				{!isResize && <p className='burger-menu' onClick={handleMenuClick}> <HiOutlineMenuAlt3 /> </p>}
 			</nav>
 		</>
 	)

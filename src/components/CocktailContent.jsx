@@ -1,8 +1,9 @@
 import React from "react"
+import { forwardRef  } from 'react';
 import { fetchState, visibleAllCocktails } from "./recoil"
 import { useRecoilState } from "recoil"
 
-const CocktailContent = () => {
+const CocktailContent = forwardRef((props, ref) => {
 	const [drinkData, setDrinkData] = useRecoilState(fetchState)
 	const [isCocktail, setIsCocktail] = useRecoilState(visibleAllCocktails)
 
@@ -11,8 +12,7 @@ const CocktailContent = () => {
 	}
 
 	return (
-		<>
-		<hr/>
+		<div ref={ref}>
 			{isCocktail && (
 				drinkData.map((drink) => (
 					<div className='cocktail-card' key={drink.id}>
@@ -24,8 +24,8 @@ const CocktailContent = () => {
 					</div>
 				))
 			)}
-		</>
+		</div>
 	)
-}
+})
 
 export default CocktailContent

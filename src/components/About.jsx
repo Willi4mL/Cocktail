@@ -1,10 +1,12 @@
 import React from 'react'
+import { forwardRef  } from 'react';
 import champagne from '../../images/champagne.png'
 import bartender from '../../images/bartender.png'
 
-function About() {
+const About = forwardRef((props, ref) => {
+
 	return (
-		<div className='about-container'>
+		<div ref={ref} className='about-container'>
 			<h3 className='about-heading'>Om oss</h3>
 			<img className='bartender' src={bartender} alt='bartender' />
 			<article className='paragraph-container'>
@@ -21,6 +23,6 @@ function About() {
 			<img className='champagne-bottle' src={champagne} alt='champagne bottle' />
 		</div>
 	)
-}
+})
 
 export default About
