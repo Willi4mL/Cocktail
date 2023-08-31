@@ -48,7 +48,6 @@
 	.about-container {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		margin-left: 45px;
 	}
 	.paragraph-container {
 		grid-column: 1 / span 2;
