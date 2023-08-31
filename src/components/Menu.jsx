@@ -22,12 +22,8 @@ function Menu() {
 		setIsMenuClicked(false)
 	  }
 
-	  const handleMenuFocus = () => {
-		setIsMenuClicked(true)
-	  }
-
 	return (
-		<div className={menuClassName} onBlur={handleMenuFocus}>
+		<div className={menuClassName}>
 			<h5 className='menu-heading'>Meny</h5>
 			<ul>
 				<li className='menuOption' onClick={handleCocktailClick}>Visa alla drinkar</li>

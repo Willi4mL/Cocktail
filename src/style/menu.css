@@ -13,8 +13,8 @@
 .desktop-screen {
 	position: fixed;
 	z-index: 2;
-	background-color: #000000;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #000000;
 	width: 180px;
 	height: 100%;
 	top: 43px;
@@ -51,4 +51,5 @@
 	background-color: #97458c;
 	cursor: pointer;
 	padding-left: 1em;
+	color:#ffffff;
 }
